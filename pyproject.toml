@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dann-domain-adaptation"
+version = "0.1.0"
+description = "DANN with Gradient Reversal Layer for site-invariant representation learning"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Abhishek Thakur", email = "a.thakur5690@gmail.com"}]
+requires-python = ">=3.10"
+keywords = ["domain-adaptation", "DANN", "gradient-reversal", "computational-pathology"]
+dependencies = ["torch>=2.0.0", "torchvision>=0.15.0", "pytorch-lightning>=2.0.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
